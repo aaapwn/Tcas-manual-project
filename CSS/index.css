@@ -1,0 +1,280 @@
+@font-face {
+    font-family: fonttintin;
+    src: url(../Font/fonttintin.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../Font/Nunito-VariableFont_wght.ttf);
+}
+
+/*.navber*/
+
+* {
+    padding: 0; 
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+body{
+    max-width: 1000;
+    box-sizing: border-box;
+    background-color: papayawhip;
+    background-image: url(../Picture/small_stars.png);
+    background-size: cover;
+}
+
+.nav{
+    position: fixed;
+    width: 95.6%;
+    height: 60px;
+    display: flex;
+    padding: 3px 30px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    font-family: fonttintin;
+}
+
+.nav .logo{
+    font-family: 'Nunito',serif;
+    line-height: 55px;
+    float: left;
+    text-decoration: none;
+}
+
+.nav .logo h2{
+    display: inline;
+}
+
+.nav ul{
+    float: left;
+}
+
+.nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.nav ul li a{
+    font-size: 1.2rem;
+    line-height: 55px;
+    display: block;
+    padding: 24px 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    margin-top: -19px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.nav ul li:hover ul{
+    display: block;
+
+}
+
+.nav ul li ul li {
+    width: 162px;
+    border-radius: 4px;
+}
+
+.nav ul li ul li a{
+    padding: 0px 12px;
+}
+
+.nav ul li ul li a:hover{
+    background-color: #ff7800;
+}
+
+/*content*/
+
+.content
+{
+    font-family: 'Nunito',serif;
+}
+
+.content .textbox
+{
+    position: relative;
+    max-width: 550px;
+    top: 200px;
+    left: 50px;
+}
+
+.content .textbox h2
+{
+    display: inline;
+    color: #f7faff;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 700;
+    padding: 1rem 0px;
+}
+
+.content .textbox p
+{
+    font-size: 1.2em;
+    color: #000;
+    padding: 1rem 0px;
+}
+
+.content .textbox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #ff7800;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.png{
+    display: flex;
+    position: absolute;
+    top: 95px;
+    right: 60px;
+    width: 38%;
+    height: 80%;
+}
+
+.navbarres{
+    display: none;
+}
+
+/*res*/
+
+@media (max-width: 1050px)
+{
+    .png{
+        top: 155px;
+        width: 30%;
+        height: 60%;
+    }
+
+    .content .textbox{
+        top: 200px;
+    }
+    .content .textbox h2{
+        font-size: 2.8rem;
+        margin-bottom: 100px;
+        line-height: 3.5rem;
+    }
+
+    .content .textbox p{
+        font-size: 1rem;
+        padding: 0.1rem 0px;
+    }
+
+    .content .textbox a{
+        margin-top: 5px;
+        padding: 13px 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 895px)
+{
+    .png{
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    
+}
+
+@media (max-width: 600px)
+{
+    .nav ul{
+        display: none;
+    }
+
+    .nav ul li{
+        position: unset;
+    }
+
+    .nav ul li a{
+        color: black;
+        line-height: 0.6rem;
+        padding: 27px 14px;
+    }
+
+    .toggle{
+        position: fixed;
+        top: 17px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../Picture/menu.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .toggle.active{
+        background-image: url(../Picture/close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .navbarres.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: papayawhip;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+
+    .content.active{
+        display: none;
+    }
+
+    .content{
+        max-width: 480px;
+    }
+
+}
+
+@media (max-width: 430px)
+{
+    .content{
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 370px)
+{
+    .content{
+        max-width: 250px;
+    }
+}

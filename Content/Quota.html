@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCAS</title>
+    <link rel="stylesheet" href="../CSS/Quota.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../Picture/icon.png"
+      sizes="256x256"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <b>
+      <div class="nav" id="navbar">
+        <a href="../index.html" class="logo"
+          ><h2 style="color: white">TCAS</h2>
+          <h2 style="color: #ff7800">Manual</h2></a
+        >
+        <div class="toggle"></div>
+        <ul class="navbar">
+          <li><a href="../index.html">หน้าหลัก</a></li>
+          <li><a href="TCAS.html">TCAS</a></li>
+          <li>
+            <a href="#">ข้อมูล</a>
+            <ul>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="Quota.html">Quota</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="Direct-admission.html">Direct admission</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+        </ul>
+        <ul class="navbarres">
+          <li><a href="../index.html">หน้าหลัก</a></li>
+          <li><a href="TCAS.html">TCAS</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="Quota.html">Quota</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="Direct-admission.html">Direct admission</a></li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </div>
+    </b>
+    <!--content-->
+    <div class="container">
+      <div class="child">
+        <br>
+        <h2>รูปแบบที่ 2 QUOTA</h2>
+        <br>
+        <div class="target">
+           <p><b>กลุ่มเป้าหมาย</b></p>
+            <ul class="ultarget">
+                <li>นักเรียนที่อยู่ในเขตพื้นที่หรือภาค</li>
+                <li>นักเรียนในโรงเรียนในเครือข่าย</li>
+                <li>นักเรียนโครงการความสามารถพิเศษ</li>
+                <li>นักเรียนในเขตพิเศษของประเทศ</li>
+            </ul>
+            <p>ใช้คะแนน GPAX 5 หรือ 6 ภาค ใช้คะแนนสอบวิชาการ</p>
+            <br>
+            <ol class="ulsystem">
+                <li>ยื่นสมัครกับสถาบันอุดมศึกษา</li>
+                <li>สถาบันอุดมศึกษากำหนดเกณฑ์การคัดเลือก อาจจะมีการใช้คะแนนสอบ</li>
+                <li>สถาบันอุดมศึกษา ส่งชื่อเข้าระบบการบริหารจัดการสิทธิ์</li>
+                <li>ผู้สมัครเข้าระบบเพื่อยืนยันสิทธิ์ เลือกยืนยันเพียง 1 สาขาวิชาที่ผ่านการคัดเลือก</li>
+            </ol> 
+        </div>
+        <br>
+        <h3 align="center"><b>กำหนดการรอบ Quota</b></h3>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>กิจกรรม</th>
+                    <th>ระยะเวลา</th>
+                </tr>
+                <tr>
+                    <td>รับสมัครและคัดเลือก</td>
+                    <td>สถาบันกำหนด</td>
+                </tr>
+                <tr>
+                    <td>สถาบันส่งรายชื่อผู้สมัครและผู้ผ่านการคัดเลือก</td>
+                    <td>2 พ.ค. 65</td>
+                </tr>
+                <tr>
+                    <td>ประกาศรายชื่อผู้ผ่านการคัดเลือก</td>
+                    <td>4 พ.ค. 65</td>
+                </tr>
+                <tr>
+                    <td>ยืนยันสิทธิ์ในระบบ</td>
+                    <td>4 - 5 พ.ค. 65</td>
+                </tr>
+                <tr>
+                    <td>สละสิทธิ์ในระบบ</td>
+                    <td>6 พ.ค. 65</td>
+                </tr>
+                <tr>
+                    <td>สถาบันประกาศรายชื่อผู้ยืนยันสิทธิ์</td>
+                    <td>9 พ.ค. 65</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+      </div>
+
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const navigation = document.querySelector(".navbarres");
+      const content = document.querySelector(".content");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        content.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

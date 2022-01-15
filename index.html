@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCAS Manual</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Picture/icon.png" sizes="256x256" />
+  </head>
+  <body>
+<!--navbar-->
+<img src="Picture/pngegg.png" class="png">
+    <b>
+      <div id="nav" class="nav">
+        <a href="index.html" class="logo"><h2 style="color: white;">TCAS  </h2> <h2 style="color: #ff7800;">Manual</h2></a>
+        <div class="toggle"></div>
+        <ul class="navbar">
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="Content/TCAS.html">TCAS</a></li>
+          <li>
+            <a href="#">ข้อมูล</a>
+            <ul>
+              <li><a href="Content/portfolio.html">Portfolio</a></li>
+              <li><a href="Content/Quota.html">Quota</a></li>
+              <li><a href="Content/admission.html">Admission</a></li>
+              <li><a href="Content/Direct-admission.html">Direct admission</a></li>
+            </ul>
+          </li>
+          <li><a href="Content/about.html">เกี่ยวกับ</a></li>
+        </ul>
+        <ul class="navbarres">
+          <li><a href="Content/index.html">หน้าหลัก</a></li>
+          <li><a href="Content/TCAS.html">TCAS</a></li>
+          <li><a href="Content/portfolio.html">Portfolio</a></li>
+          <li><a href="Content/Quota.html">Quota</a></li>
+          <li><a href="Content/admission.html">Admission</a></li>
+          <li><a href="Content/Direct-admission.html">Direct admission</a></li>
+          <li><a href="Content/about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </div>
+    </b>
+    <!--content-->
+  <div class="content">
+    <div class="textbox">
+      <h2 style="color: black;">TCAS  </h2> <h2 style="color: #ff7800;">Manual</h2>
+      <p><b>TCAS Manual เป็นเว็บไซต์ที่แนะนำการใช้ระบบTCASเบื้องต้น</b></p>
+      <a href="Content/TCAS.html">เข้าใช้งาน</a>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const navigation = document.querySelector('.navbarres')
+    const content = document.querySelector('.content')
+    menuToggle.onclick = function(){
+      menuToggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+      content.classList.toggle('active')
+    }
+  </script>
+  </body>
+</html>

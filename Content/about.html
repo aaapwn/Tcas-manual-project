@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCAS</title>
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../Picture/icon.png"
+      sizes="256x256"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <b>
+      <div class="nav" id="navbar">
+        <a href="../index.html" class="logo"
+          ><h2 style="color: white">TCAS</h2>
+          <h2 style="color: #ff7800">Manual</h2></a
+        >
+        <div class="toggle"></div>
+        <ul class="navbar">
+          <li><a href="../index.html">หน้าหลัก</a></li>
+          <li><a href="TCAS.html">TCAS</a></li>
+          <li>
+            <a href="#">ข้อมูล</a>
+            <ul>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="Quota.html">Quota</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="Direct-admission.html">Direct admission</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+        </ul>
+        <ul class="navbarres">
+          <li><a href="../index.html">หน้าหลัก</a></li>
+          <li><a href="TCAS.html">TCAS</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="Quota.html">Quota</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="Direct-admission.html">Direct admission</a></li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </div>
+    </b>
+    <!--content-->
+    <div class="container">
+      <div class="child">
+        <br>
+        <h3>อ้างอิง</h3>
+        <p>สมาคมที่ประชุมอธิการบดีแห่งประเทศไทย./(2565).// คู่มือ TACS สำหรับผู้สมัคร ,//จาก <a href="https://www.mytcas.com/" target="_blank">https://www.mytcas.com/</a></p>
+        <p class="mbtn" align="center"><a href="https://assets.mytcas.com/d/TCAS65-student-v1-9dec64.pdf" target="_blank">อ่านฉบับเต็ม</a></p>
+        <br>
+        <p>พี่มิ้นท์./(2564).// สรุป! TCAS65 แบบละเอียด มีกี่รอบ กี่รูปแบบ เข้าใจง่ายใน 5 นาที ,//จาก <a href="https://www.dek-d.com/" target="_blank" rel="noopener noreferrer">https://www.dek-d.com/</a></p>
+        <p class="mbtn" align="center"><a href="https://www.dek-d.com/tcas/58455/" target="_blank">อ่านฉบับเต็ม</a></p>
+        <br>
+      </div>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const navigation = document.querySelector(".navbarres");
+      const content = document.querySelector(".content");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        content.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
